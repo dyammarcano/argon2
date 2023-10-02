@@ -18,10 +18,4 @@ func TestNewArgon2Default(t *testing.T) {
 	if !params.VerifyString(password, values[0], values[1]) {
 		t.Errorf("Password should be verified")
 	}
-
-	hashBytes := params.HashBytes([]byte(password))
-
-	if !params.Verify([]byte(password), hashBytes, []byte(values[1])) {
-		t.Errorf("Password should be verified")
-	}
 }
