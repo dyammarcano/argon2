@@ -1,4 +1,4 @@
-module github.com/dyammarcano/Argon2icExample
+module github.com/dyammarcano/argon2
 
 go 1.21
 
